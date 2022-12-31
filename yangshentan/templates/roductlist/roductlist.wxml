@@ -1,0 +1,16 @@
+<!-- 商品列表信息文件模板 -->
+
+<template name="list">
+<view class="list">
+<!-- 商品照片 -->
+  <image class="img" src='{{item.pic}}'></image>
+    <view class="info">
+    <!-- 商品标题 -->
+    <view class="title">{{item.name}}</view>
+    <!-- 商品内容 -->
+    <view class="deac">{{item.description}}</view>
+    <!-- 商品付款数量 -->
+    <view class="buyNum"><text class="red">￥{{item.buynum}}</text>付款</view>
+    </view>
+</view>
+</template>

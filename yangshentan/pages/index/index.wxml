@@ -1,0 +1,72 @@
+<!-- 轮播图  -->
+<view class="banner">
+  <!-- bindchange current改变时会触发change事件  swiper轮播图 autoplay自动切换 interval切换时间 circular衔接切换 -->
+  <swiper bindchange="swiperChange" autoplay="true" interval="3000" circular="true">
+    <swiper-item>
+      <image src="/img/shouye3.jpg"></image>
+      <view class="info">龙眼肉气味甘温，于补气之中</view>
+    </swiper-item>
+    <swiper-item>
+      <image src="/img/shouye2.jpg"></image>
+      <view class="info">龙眼肉可益脾长智</view>
+    </swiper-item>
+    <swiper-item>
+      <image src="/img/shouye1.jpg"></image>
+      <view class="info">果实在8月是上旬成熟，是早熟优质鲜食品种</view>
+    </swiper-item>
+    <swiper-item>
+      <image src="/img/shouye4.jpg"></image>
+      <view class="info">该品种早结、丰产、稳产、果大质优</view>
+    </swiper-item>
+    <swiper-item>
+      <image src="/img/shouye5.jpg"></image>
+      <view class="info">阳虚发热、易上火的人要少吃</view>
+    </swiper-item>
+  </swiper>
+  <!-- 页数文字 -->
+  <view class="current">{{current+1}}/5</view>
+</view>
+
+<!-- 热门推荐内容 -->
+<!-- 点击跳转到logs页面 -->
+<!-- space="ensp"空格 -->
+<text class="days" space="ensp">热门推荐                             .^. </text>
+<navigator class="size" url="../logs/logs" open-type="navigate">
+  <text> 滋养肺胃之阴......</text>
+</navigator>
+<navigator class="size" url="../logss/logss" open-type="navigate">
+  <text> 中医讲, 梨入心、肺二经......</text>
+</navigator>
+<navigator class="size" url="../logsss/logsss" open-type="navigate">
+  <text> 身体心火旺，往往会出现以下的......</text>
+</navigator>
+
+<!-- 列表信息 -->
+<view class="wrapper">
+  <!-- <view class="list">
+  <view class="title">标题</view>
+  <view class="content">
+   <image src="/img/list1.png"></image>
+   <view class="texts">
+   <view class="desc">气血是人体的根本</view>
+   <view class="num"> <text>999+</text>次阅读</view>
+   </view>
+  </view>
+ </view> -->
+
+  <!-- wx:for="{{listArr}}" wx:key="index"遍历listArr获取列表接口数据 -->
+  <view class="list" wx:for="{{ListArr}}" wx:key="index">
+  <!--navigator页面跳转组件 url后面传递参数?id={{item.id}} 在跳转页面的onload函数里面接收传递过去的参数  -->
+    <navigator url="../indexDetail/indexDetail?id={{item.id}}">
+      <view class="title">{{item.title}}</view>
+      <view class="content">
+        <image src="{{item.image}}"></image>
+        <view class="texts">
+          <view class="desc">{{item.desc}}</view>
+          <view class="num"> <text>{{item.readNum}}+</text>次阅读</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+</view>

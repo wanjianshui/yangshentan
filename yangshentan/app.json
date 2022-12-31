@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/food/food",
+    "pages/shop/shop",
+    "pages/logs/logs",
+    "pages/logss/logss",
+    "pages/logsss/logsss",
+    "pages/indexDetail/indexDetail",
+    "pages/hotCity/hotCity",
+    "pages/search/search",
+    "pages/typeList/typeList",
+    "pages/shopDetail/shopDetail",
+    "pages/logsContact/logsContact",
+    "pages/logsRegard/logsRegard"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#51808f",
+    "navigationBarTitleText": "养生堂",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#43bf92",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/sy.png",
+        "selectedIconPath": "img/dj.png"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "养生栏",
+        "iconPath": "img/slf.png",
+        "selectedIconPath": "img/dj.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "购物车",
+        "iconPath": "img/gwc.png",
+        "selectedIconPath": "img/dj.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "img/wd.png",
+        "selectedIconPath": "img/dj.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息已被我获取了！！！"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

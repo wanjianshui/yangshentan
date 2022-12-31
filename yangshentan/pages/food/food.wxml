@@ -1,0 +1,39 @@
+<!-- 位置 搜索框文件 -->
+
+<!-- 文字滚动效果 -->
+<view class="gun">
+  <view class="marquee_container" style="--marqueeWidth--:-35em">
+  <view class="marquee_text">清静养生的首要方法就是减少杂念，降低名利和物质的欲望，要心志平和</view>
+</view>
+</view>
+
+<view class="header">
+ <navigator hover-class="none" class="address" url="../hotCity/hotCity">{{location}}</navigator>
+ <view class="search">
+  <navigator hover-class="none" url="../search/search">请输入内容</navigator></view>
+</view>
+
+<!-- 分类列表 -->
+<view class="type">
+<!-- wx:for="{{typeData}}"遍历模块的数据渲染到页面 -->
+ <view class="item" wx:for="{{typeData}}" wx:key="index">
+ <navigator url="../typeList/typeList?cid={{item.type}}">
+  <image src="../../img/fl1.png"></image>
+  <view class="info">{{item.title}}</view>
+ </navigator>
+ </view>
+</view>
+
+
+<import src='../../templates/roductlist/roductlist'/>
+<!-- 商品列表信息 -->
+<view class="wrapper">
+<!-- for变量获取list数组里面的内容  bindtap="getShopDetail" data-mark='{{item.id}}'点击商品列表跳转到商品详情页方法 -->
+<view wx:for="{{list}}" wx:key="index" bindtap="getShopDetail" data-mark='{{item.id}}'>
+<!-- is='模板名字' 使用模板 data='{{list遍历的每一项}}'-->
+  <template is='list' data='{{item}}'></template>
+</view>
+
+<!-- 下拉到底部的提示信息 -->
+<view class="more">{{moreInfo}}</view>
+</view>

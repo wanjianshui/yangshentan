@@ -1,0 +1,10 @@
+<!-- 城市文件 -->
+
+<!-- 当前的城市 -->
+<view class="address">你所在的城市：</view>
+<!-- bindtap获取定位城市方法 -->
+<button type="primary" size="mini" bindtap="getLocation">定位</button>
+<!-- 热门城市 -->
+<view class="hotCtity">热门城市推荐</view>
+<!-- bindtap="selectCity"点击事件 -->
+<button size="mini" class="btn" bindtap="selectCity" data-name='{{item}}' wx:for="{{hotCtiy}}" wx:key="index"> {{item}} </button>

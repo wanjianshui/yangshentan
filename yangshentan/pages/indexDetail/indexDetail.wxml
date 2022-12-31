@@ -1,0 +1,10 @@
+<!-- 列表内容文件 -->
+
+<!-- 标题 -->
+<view class="title">{{obj.title}}</view>
+
+<!-- 图片 -->
+<image src="{{obj.image}}"></image>
+
+<!-- 文字内容 -->
+<view class="detail">{{obj.detail}}</view>

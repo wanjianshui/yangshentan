@@ -1,0 +1,120 @@
+/* 轮播图样式 */
+.banner{
+  width: 100%;
+  height: 350rpx;
+  /* 绝对定位 */
+  position: relative;
+}
+.banner swiper{
+  height: 350rpx;
+}
+/* 图片宽高 */
+.banner image{
+  width: 100%;
+  height: 350rpx;
+}
+.banner swiper-item{
+  /* 相对定位 */
+position: relative;
+}
+/* 图片文字样式 */
+.banner .info{
+  /* 绝对定位 */
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+/* 图片文字背景颜色 */
+background: rgba(0, 0, 0, 0.5);
+color: #fff;
+/* 字体居中 */
+text-align: center;
+padding: 10rpx;
+font-size: 28rpx;
+}
+/* 轮播图页数文字 */
+.banner .current{
+  /* 相对定位  */
+  position: absolute;
+  right: 10rpx;
+  bottom: 0;
+  color: wheat;
+  font-size: 28rpx;
+  padding: 10rpx;
+}
+
+/* 热门推荐字体样式 */
+.days{
+  position: relative;
+  bottom: -20px;
+  font-size: 17px;
+}
+
+/* 热门推荐内容样式 */
+.size{
+  position: relative;
+  bottom: -25px;
+  font-size: 15px;
+  border: 0.5px solid rgb(172, 170, 170);
+  color:rgb(151, 151, 231);
+  padding: 1px;
+  border-top:none;
+}
+
+/* 列表信息 */
+.wrapper{
+  margin-top: 80rpx;
+  margin-left: 20rpx;
+}
+.list{
+  /* 下边框线 */
+  border-bottom: 1rpx  solid #eee;
+  /* 下边框线向下10rpx*/ 
+  padding-bottom: 10rpx;
+  margin-bottom: 20rpx;
+}
+/* 标题内容样式 */
+.list .title{
+ font-size: 32rpx;
+ color: '#lalalla';
+ margin-bottom: 10rpx;
+}
+.list .content{
+  /* 弹性布局 */
+display: flex;
+}
+.list image{
+  width: 210rpx;
+  height: 140rpx;
+  padding-right: 20rpx;
+}
+.texts{
+  /* width: 47rpx; */
+  flex: 1;
+  /* background: pink; */
+  height: 140rpx;
+  font-size: 28rpx;
+  color: #777777;
+  position: relative;
+}
+.desc{
+  font-size: 26rpx;
+  color: #777777;
+  /* 三行省略 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.num{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #4d4d4d;
+  font-size: 20rpx;
+}
+.num text{
+  color: red;
+  padding-right: 4rpx;
+}

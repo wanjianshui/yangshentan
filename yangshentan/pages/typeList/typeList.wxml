@@ -1,0 +1,17 @@
+<!-- 分类详情数据页面文件 -->
+
+<!-- 商品列表信息文件模板 -->
+
+<!-- for遍历list  bindtap="getShopDetail" data-mark='{{item.id}}'点击商品列表跳转到商品详情页方法 -->
+<view class="list" wx:for="{{list}}" wx:key="index" bindtap="getShopDetail" data-mark='{{item.id}}'>
+<!-- 商品照片 -->
+  <image class="img" src='{{item.pic}}'></image>
+    <view class="info">
+    <!-- 商品标题 -->
+    <view class="title">{{item.name}}</view>
+    <!-- 商品内容 -->
+    <view class="deac">{{item.description}}</view>
+    <!-- 商品付款数量 -->
+    <view class="buyNum"><text class="red">￥{{item.buynum}}</text>付款</view>
+    </view>
+</view>

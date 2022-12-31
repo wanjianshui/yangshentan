@@ -1,0 +1,7 @@
+/* pages/logs/logs.wxss */
+.text{
+  font-size: 50rpx;
+  text-align: center;
+  color: blueviolet;
+  margin-top: 500rpx;
+}

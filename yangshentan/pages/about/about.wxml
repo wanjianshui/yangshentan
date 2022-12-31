@@ -1,0 +1,22 @@
+<!-- 登陆界面文件 -->
+
+<!--  点击登陆获取头像和昵称  -->
+<view class="userinfo">
+  <button  wx:if="{{isShow}}" type="default" open-type="getUserInfo" bindgetuserinfo="login">获取头像和昵称</button>
+
+<view class="userimg" wx:else>
+  <image src="{{avatarUrl}}" class="logo"></image>
+  <view>{{nickName}}</view>
+</view>
+</view>
+<navigator url="../../pages/logsContact/logsContact">
+<view class="contact">联系我们</view>
+</navigator>
+<navigator url="../../pages/logsRegard/logsRegard">
+<view class="regard">关于我们</view>
+</navigator>
+
+
+
+
+

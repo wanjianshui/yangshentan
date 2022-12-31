@@ -1,0 +1,17 @@
+<!-- 商品详情页的文件 -->
+
+<!-- 商品名字名字 -->
+<view class="name">{{obj.name}}</view>
+<!-- 商品图片 -->
+<view class="container">
+<view class="product">商品信息介绍</view>
+<image src="{{obj.pic}}"></image>
+<view class="desc">{{obj.details}}</view>
+</view>
+<!-- 加入购物车 -->
+<view class="bottom">
+ <view class="img"><image src="../../img/gwc.png"></image></view>
+ <view class="show">加入购物车</view>
+ <view class="buyNow">直接购买</view>
+</view>
+

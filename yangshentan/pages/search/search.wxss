@@ -1,0 +1,62 @@
+page{
+  background: #f5f5f5;
+}
+
+.search{
+  padding: 20rpx;
+  background: #fff;
+}
+.search input{
+   background: #eee;
+   color: #666;
+   border-radius: 10rpx;
+   font-size: 28rpx;
+   padding: 10rpx;
+}
+.list{
+  background: #fff;
+  padding: 20rpx;
+  display: flex;
+  margin-top: 20rpx;
+  
+}
+.list .img{
+  width: 184rpx;
+  height: 184rpx;
+  padding-right: 20rpx;
+}
+.list .info{
+  flex: 1;
+  height: 184rpx;
+  position: relative;
+}
+.list .info .title{
+  font-size: 30rpx;
+  margin-bottom: 8rpx;
+}
+.list .info .deac{
+  color: #666;
+  font-size: 28rpx;
+   /* 三行省略 */
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
+.list .buyNum{
+  font-size: 25rpx;
+  color: #999;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.red{
+  color: red;
+  margin-right: 20rpx;
+}
+.hint{
+  color: rgb(126, 126, 126);
+  text-align: center;
+  padding: 50rpx;
+}
